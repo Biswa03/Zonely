@@ -26,7 +26,7 @@ const Products = () => {
       setSelectedProduct(null);
     };
 
-    useEffect(() => {
+    useEffect(() => {   
         // const fetchProductsData = async () => {
         //     let url = `https://dummyjson.com/products?limit=10&skip=${skip}`;
 
