@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+
+const config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,7 +12,16 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: ['Inter', 'Raleway', 'Nunito', 'Roboto', 'sans-serif'],
+        // sans: ['Arial', 'Helvetica', 'Tahoma', 'Verdana', 'sans-serif'],
+        // sans: ['var(--font-geist-sans)', 'sans-serif'],
+        serif: ['Georgia', 'Merriweather', 'Times New Roman', 'serif'],
+        mono: ['Courier New', 'Lucida Console', 'Menlo', 'monospace'],
+      },
     },
   },
   plugins: [],
 };
+
+export default config;
